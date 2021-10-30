@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @settivishal
 - 👀 I’m interested in Frontend
-- 🌱 I’m currently learning HTML,CSS,JS
+- 🌱 I’m currently working with Javascript, React and Node
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me https://twitter.com/VishalKSetti, https://www.linkedin.com/in/vishalksetti2026/
 
