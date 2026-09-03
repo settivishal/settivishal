@@ -1,36 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="840" height="500" viewBox="0 0 840 500" font-family="Consolas, Menlo, monospace" font-size="13px">
 <rect x="0.5" y="0.5" width="839" height="499" rx="10" fill="#0d1117" stroke="#30363d"/>
-<text x="25" y="35" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">                            ..&#x27;.</text>
-<text x="25" y="48" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">                        ...    &#x27;,,&#x27;.</text>
-<text x="25" y="61" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">             &#x27;`,-=++*#*###*+~;&#x27;  .,:,&#x27;</text>
-<text x="25" y="74" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">          `-+%@@@@@@@@@@@@@@@@@#=,&#x27;`,:`</text>
-<text x="25" y="87" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">       .-*@@@@@%%%%%%%%%%%%%%%@@@@%=-`,`</text>
-<text x="25" y="100" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">      -%@@%%%%@@@@@@@@@@@@@@@@%%%%@@@*;,`</text>
-<text x="25" y="113" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">    &#x27;*@@%%@@@@@@@@@@@@@@@@@@@@@@@@%%%@%=,,.</text>
-<text x="25" y="126" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">   .#@%%@@@@@@@@@@@@@@%%@@@@@@@@@@@@@%%@+,,.</text>
-<text x="25" y="139" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">   -@%@@@@@@@@@@@@@%%%%%%%%%%%@@@@@@%%%%@=,:</text>
-<text x="25" y="152" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">   ;@%%@@@@@@@@@%%%###******#%%%@@@%@@@@@@~;.</text>
-<text x="25" y="165" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">    =@@%@@%@@@%%%#**+++=+*#%%%%@@@@%#**+*%@+`</text>
-<text x="25" y="178" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">     ;%@%@@@@@@@@@%#**+=+##%%%####**+~;:`~%@~</text>
-<text x="25" y="191" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">      .~%%%%@%%###%###*****#%######*+~:``,*%*</text>
-<text x="25" y="204" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">       `@*=#######%%%#*+=+#@@##%#*++=-:``,=##:&#x27;</text>
-<text x="25" y="217" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">       .%*~*#%%##@%#%#+~::-+****+~;,`````,~**+#:</text>
-<text x="25" y="230" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">        :*-+***####**+=-;,,:;---;:,&#x27;..&#x27;```-+~,+#</text>
-<text x="25" y="243" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">       `~*--~-~~~~~=+~;;,&#x27;&#x27;``-~-;;,&#x27;.&#x27;&#x27;`,,-=+~-*</text>
-<text x="25" y="256" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">       =%*~:;;;---=+-~=~---:,;=+=~-;:,`,,:~~=~-,</text>
-<text x="25" y="269" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">       ,%#=::;~~==*==%%##%%#-,-+#*==~-;::;~=`,:</text>
-<text x="25" y="282" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">        `++;-=++*##+#%@@@%#+=-~*##+===~--~==;,`</text>
-<text x="25" y="295" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">          ==+**##%@@@%%%#***#**%%#=~==+~~~==;,&#x27;</text>
-<text x="25" y="308" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">          ~#+*+*%@%@@%*=--;-~+#%@%=~+++~~==~.</text>
-<text x="25" y="321" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">          `+#**+*%@%*+~-;--;:;-=*#==+*+=+++-</text>
-<text x="25" y="334" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">           .#%%**%%*+*#####*=~===*=+*#*****:</text>
-<text x="25" y="347" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">            `%@%%%*++#%@@%#=--=~+**#%%##**+.</text>
-<text x="25" y="360" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">             &#x27;*@%%#=;-~=+=~;,;-=##%%%%%#%+:</text>
-<text x="25" y="373" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">              .*@%%%**#*####***%%@%%%@%#=:,,</text>
-<text x="25" y="386" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">                ~%@@@@@@@@@@@%%%%@@@%*~;:,,:`&#x27;..</text>
-<text x="25" y="399" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">                 `%%%%%@@%%%%%%@@%*~:`,,,::,::```&#x27;&#x27;..</text>
-<text x="25" y="412" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">                .&#x27;~#%@@@@@@@%%+;;;;:,,`,,::`,,`&#x27;`,&#x27;```&#x27;.</text>
-<text x="25" y="425" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">             &#x27;&#x27;,:,-+#@%%%@@@@%%=`,:;;:,,:,,,`&#x27;&#x27;&#x27;.,`.&#x27;``&#x27;&#x27;&#x27;</text>
+<text x="25" y="35" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">                           @@%%@</text>
+<text x="25" y="48" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">                     @@@@@%@  @%##%@</text>
+<text x="25" y="61" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">             %#*+~~-;;;;:;;-=+#  %***%</text>
+<text x="25" y="74" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">          #=;,``&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;,;~*%#**#</text>
+<text x="25" y="87" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">       %+:&#x27;..&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;.......&#x27;.&#x27;&#x27;&#x27;&#x27;,-=**#</text>
+<text x="25" y="100" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">     @=,..&#x27;&#x27;&#x27;..........     ........&#x27;;=**@</text>
+<text x="25" y="113" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">    %:..........   ...&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;...  ....`-+*%</text>
+<text x="25" y="126" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">   %,.&#x27;....... .&#x27;&#x27;```,,,,,,,,``&#x27;&#x27;..  ..&#x27;;++%</text>
+<text x="25" y="139" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">   = &#x27;&#x27;....   .&#x27;`,,,::::::,,,,,```&#x27;&#x27;.   .-++</text>
+<text x="25" y="152" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">   + .....  ..&#x27;`,::;;;;;;;;;;::,,````&#x27;&#x27;. &#x27;-=%</text>
+<text x="25" y="165" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">   @- ...  .&#x27;&#x27;`,::;----~-;;,```````,::;;:&#x27; :#</text>
+<text x="25" y="178" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">     =&#x27;   .&#x27;&#x27;`````,:;;---;::,,::::;;;~=+*~&#x27; ~</text>
+<text x="25" y="191" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">      %~ &#x27;,,`,,:::::::;--;;:,,,,,:::;~++*+;`;</text>
+<text x="25" y="204" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">       # :~;;;:::,,,::;-~-:,`:,`:;;;-~+**+-::+#</text>
+<text x="25" y="217" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">       @`;=-;,,:,`,:,:-=++=-;;;;-~=++****+-::;:+</text>
+<text x="25" y="230" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">        *-+----;;;;;;-~=+**+=====++*##**++~;-=;:%</text>
+<text x="25" y="243" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">       #=-+====~~~=~-~+++##**=~~==+****+++~;;--;%</text>
+<text x="25" y="256" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">       =:;=++++===~-=~~~===+*=-;-~~==++++=--;--*</text>
+<text x="25" y="269" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">       #,;~+++=~~--~-,,::,,:=+=-:;---~===~--===@</text>
+<text x="25" y="282" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">        #~-+=~--;;;-:`&#x27;&#x27;``:;-~-;::;----~~-;-~=+</text>
+<text x="25" y="295" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">          ~~--;;:,````,,:::;:;:,`:---;;---;-=*#</text>
+<text x="25" y="308" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">          =;---;,&#x27; .`,;-====-;:`&#x27;,--;;;---;-%</text>
+<text x="25" y="321" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">          #-:;;-;`&#x27;,:-~~=~~===~-::--;:;-;;;~@</text>
+<text x="25" y="334" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">           %;,:;;,,;-;::,::;----;:;;:,:::::+</text>
+<text x="25" y="347" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">            #,`,::;--:,``,:-~~--;:::,,,,::;%</text>
+<text x="25" y="360" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">             %:&#x27;`,:-=~--;--=+=~-:,````,,,;~%</text>
+<text x="25" y="373" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">              %:.&#x27;`,:;::::::;::,,&#x27;``&#x27;&#x27;`,;~==%</text>
+<text x="25" y="386" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">               @~`&#x27;&#x27;&#x27;&#x27;&#x27;`&#x27;&#x27;&#x27;&#x27;&#x27;``&#x27;&#x27;&#x27;&#x27;.`:-~~~=~=**#%@</text>
+<text x="25" y="399" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">                 *,...       ..  &#x27;,;~===~~~~~~~===++#%@</text>
+<text x="25" y="412" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">                %#-:&#x27;&#x27;.       :-~~~~===~~~~=~~==~~~~~~=+#%</text>
+<text x="25" y="425" font-size="10px" font-family="Consolas, Menlo, monospace" fill="#e6edf3" xml:space="preserve">            @%#*++~-`.```&#x27;&#x27;&#x27;..&#x27;;==~~~~=~~~~~=====~~=~~~~~~</text>
 <text x="390" y="45" xml:space="preserve"><tspan fill="#58a6ff">settivishal@github </tspan><tspan fill="#484f58">─────────────────────────────────────</tspan></text>
 <text x="390" y="87" xml:space="preserve"><tspan fill="#ffa657">Role: </tspan><tspan fill="#484f58">............. </tspan><tspan fill="#c9d1d9">MS CS Grad Student, Univ. of Florida</tspan></text>
 <text x="390" y="108" xml:space="preserve"><tspan fill="#ffa657">Focus: </tspan><tspan fill="#484f58">................... </tspan><tspan fill="#c9d1d9">Backend &amp; Distributed Systems</tspan></text>
@@ -43,6 +43,6 @@
 <text x="390" y="297" xml:space="preserve"><tspan fill="#ffa657">LinkedIn: </tspan><tspan fill="#484f58">...................... </tspan><tspan fill="#c9d1d9">in/your-linkedin-handle</tspan></text>
 <text x="390" y="339" xml:space="preserve"><tspan fill="#58a6ff">─ GitHub Stats </tspan><tspan fill="#484f58">─────────────────────────────────────────</tspan></text>
 <text x="390" y="360" xml:space="preserve"><tspan fill="#ffa657">Repos: </tspan><tspan fill="#484f58">... </tspan><tspan fill="#c9d1d9">60 {Contributed: 0}</tspan><tspan fill="#484f58"> | </tspan><tspan fill="#ffa657">Stars: </tspan><tspan fill="#484f58">.............. </tspan><tspan fill="#c9d1d9">4</tspan></text>
-<text x="390" y="381" xml:space="preserve"><tspan fill="#ffa657">Commits: </tspan><tspan fill="#484f58">............... </tspan><tspan fill="#c9d1d9">1,246</tspan><tspan fill="#484f58"> | </tspan><tspan fill="#ffa657">Followers: </tspan><tspan fill="#484f58">.......... </tspan><tspan fill="#c9d1d9">3</tspan></text>
-<text x="390" y="402" xml:space="preserve"><tspan fill="#ffa657">Lines of Code: </tspan><tspan fill="#c9d1d9">454,957</tspan><tspan fill="#484f58"> ( </tspan><tspan fill="#3fb950">568,549++</tspan><tspan fill="#484f58">, </tspan><tspan fill="#f85149">113,592--</tspan><tspan fill="#484f58"> )</tspan></text>
+<text x="390" y="381" xml:space="preserve"><tspan fill="#ffa657">Commits: </tspan><tspan fill="#484f58">............... </tspan><tspan fill="#c9d1d9">1,247</tspan><tspan fill="#484f58"> | </tspan><tspan fill="#ffa657">Followers: </tspan><tspan fill="#484f58">.......... </tspan><tspan fill="#c9d1d9">3</tspan></text>
+<text x="390" y="402" xml:space="preserve"><tspan fill="#ffa657">Lines of Code: </tspan><tspan fill="#c9d1d9">455,356</tspan><tspan fill="#484f58"> ( </tspan><tspan fill="#3fb950">569,034++</tspan><tspan fill="#484f58">, </tspan><tspan fill="#f85149">113,678--</tspan><tspan fill="#484f58"> )</tspan></text>
 </svg>
