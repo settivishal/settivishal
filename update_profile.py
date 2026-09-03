@@ -16,10 +16,44 @@ import urllib.request
 from datetime import datetime, timezone
 
 USER = "settivishal"
-JOINED_YEAR = 2020  # EDIT ME: account creation year, never changes
+JOINED_YEAR = 2021  # EDIT ME: account creation year, never changes
 W = 56  # info column width in characters
 
-# ASCII-art rendering of your photo (generated from IMG_8082.jpeg).
+# ASCII-art rendering of your photo (generated from a white-background photo).
+ART_DARK = r"""
+                            ..'.
+                        ...    ',,'.
+             '`,-=++*******+~;'  .,:,'
+          `-+*******************=,'`,:`
+       .-**************************=-`,`
+      -*******************************;,`
+    '**********************************=,,.
+   .************************************+,,.
+   -*************************************=,:
+   ;**************************************~;.
+    =***************+++=+**************+***+`
+     ;****************+=+***********+~;:`~**~
+      .~****************************+~:``,***
+       `**=************+=+********++=-:``,=**:'
+       .**~***********+~::-+****+~;,`````,~**+*:
+        :*-+*********+=-;,,:;---;:,'..'```-+~,+*
+       `~*--~-~~~~~=+~;;,''``-~-;;,'.''`,,-=+~-*
+       =**~:;;;---=+-~=~---:,;=+=~-;:,`,,:~~=~-,
+       ,**=::;~~==*==*******-,-+**==~-;::;~=`,:
+        `++;-=++***+*******+=-~***+===~--~==;,`
+          ==+*********************=~==+~~~==;,'
+          ~*+*+********=--;-~+****=~+++~~==~.
+          `+***+*****+~-;--;:;-=**==+*+=+++-
+           .********+*******=~===*=+*******:
+            `******++******=--=~+*********+.
+             '*****=;-~=+=~;,;-=*********+:
+              .*************************=:,,
+                ~*********************~;:,,:`'..
+                 `*****************~:`,,,::,::```''..
+                .'~***********+;;;;:,,`,,::`,,`'`,'```'.
+             '',:,-+***********=`,:;;:,,:,,,`'''.,`.'``'''
+"""
+
 ART = r"""
                             ..'.
                         ...    ',,'.
@@ -156,11 +190,37 @@ def loc(repo_names, user_id):
 
 
 PALETTES = {
-    "dark": {"bg": "#0d1117", "border": "#30363d", "art": "#e6edf3", "h": "#58a6ff",
-            "k": "#ffa657", "v": "#c9d1d9", "d": "#484f58", "g": "#3fb950", "r": "#f85149"},
-    "light": {"bg": "#ffffff", "border": "#d0d7de", "art": "#57606a", "h": "#0969da",
+    "dark": {"bg": "#0d1117", "border": "#30363d", "art": "#e6edf3",
+             "art_lo": "#3d444d", "art_mid": "#8b949e", "art_hi": "#f0f6fc", "h": "#58a6ff",
+             "k": "#ffa657", "v": "#c9d1d9", "d": "#484f58", "g": "#3fb950", "r": "#f85149"},
+    "light": {"bg": "#ffffff", "border": "#d0d7de", "art": "#57606a",
+              "art_lo": "#57606a", "art_mid": "#57606a", "art_hi": "#57606a", "h": "#0969da",
               "k": "#953800", "v": "#24292f", "d": "#afb8c1", "g": "#1a7f37", "r": "#cf222e"},
 }
+
+# same character ramp used when generating ART / ART_DARK, needed to bucket each
+# glyph into a shading tier (light-mode tiers all resolve to the same flat color,
+# so this only visually matters for dark mode)
+ART_CHARS = " .'`,:;-~=+*#%@"
+
+
+def art_segments(line):
+    """Group a line into runs of (text, tier) so each run can get its own fill,
+    creating a highlight/shadow illusion instead of one flat color."""
+    segs = []
+    for ch in line:
+        idx = ART_CHARS.index(ch) if ch in ART_CHARS else 0
+        if idx <= 4:
+            tier = "art_lo"
+        elif idx <= 9:
+            tier = "art_mid"
+        else:
+            tier = "art_hi"
+        if segs and segs[-1][1] == tier:
+            segs[-1] = (segs[-1][0] + ch, tier)
+        else:
+            segs.append((ch, tier))
+    return segs
 
 
 def kv(key, val, width=W):
@@ -188,12 +248,12 @@ def info_lines(s):
         kv("Prior", "SWE, FoodHub Software Solutions"),
         kv("Editor", "Claude Code, VS Code"),
         [],
-        kv("Languages", "Go, Java, Python, TS"),
+        kv("Languages", "Go, Java, Python, TS, C++"),
         kv("Exploring", "distributed systems, agentic AI"),
         [],
         rule("Contact"),
-        kv("Email", "vishalksetti0206@gmail.com"),
-        kv("LinkedIn", "https://www.linkedin.com/in/vishalsetti/"),
+        kv("Email", "your-email@example.com"),          # EDIT ME
+        kv("LinkedIn", "in/your-linkedin-handle"),       # EDIT ME
         [],
         rule("GitHub Stats"),
         kv2("Repos", f"{s['repos']} {{Contributed: {s['contributed']}}}", "Stars", n(s["stars"])),
@@ -215,11 +275,16 @@ def render(mode, stats):
         f'font-family="Consolas, Menlo, monospace" font-size="13px">',
         f'<rect x="0.5" y="0.5" width="839" height="{CARD_H - 1}" rx="10" fill="{p["bg"]}" stroke="{p["border"]}"/>',
     ]
-    for i, line in enumerate(ART.strip("\n").split("\n")):
+    art = ART_DARK if mode == "dark" else ART
+    for i, line in enumerate(art.strip("\n").split("\n")):
         y = 35 + i * ART_LINE_H
+        spans = "".join(
+            f'<tspan fill="{p[tier]}">{html.escape(text)}</tspan>'
+            for text, tier in art_segments(line)
+        )
         out.append(
             f'<text x="25" y="{y}" font-size="{ART_FONT}px" font-family="Consolas, Menlo, monospace" '
-            f'fill="{p["art"]}" xml:space="preserve">{html.escape(line)}</text>'
+            f'xml:space="preserve">{spans}</text>'
         )
     for i, segs in enumerate(info_lines(stats)):
         if not segs:
