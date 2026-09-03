@@ -16,19 +16,42 @@ import urllib.request
 from datetime import datetime, timezone
 
 USER = "settivishal"
-JOINED_YEAR = 2020  #account creation year
+JOINED_YEAR = 2020  # EDIT ME: account creation year, never changes
 W = 56  # info column width in characters
 
-# Simple monogram block instead of a copied piece of art.
+# ASCII-art rendering of your photo (generated from IMG_8082.jpeg).
 ART = r"""
-   _____ ______ _______ _______ _____
-  / ____|  ____|__   __|__   __|_   _|
- | (___ | |__     | |     | |    | |
-  \___ \|  __|    | |     | |    | |
-  ____) | |____   | |     | |   _| |_
- |_____/|______|  |_|     |_|  |_____|
-
-        v i s h a l   s e t t i
+                            ..'.
+                        ...    ',,'.
+             '`,-=++*#*###*+~;'  .,:,'
+          `-+%@@@@@@@@@@@@@@@@@#=,'`,:`
+       .-*@@@@@%%%%%%%%%%%%%%%@@@@%=-`,`
+      -%@@%%%%@@@@@@@@@@@@@@@@%%%%@@@*;,`
+    '*@@%%@@@@@@@@@@@@@@@@@@@@@@@@%%%@%=,,.
+   .#@%%@@@@@@@@@@@@@@%%@@@@@@@@@@@@@%%@+,,.
+   -@%@@@@@@@@@@@@@%%%%%%%%%%%@@@@@@%%%%@=,:
+   ;@%%@@@@@@@@@%%%###******#%%%@@@%@@@@@@~;.
+    =@@%@@%@@@%%%#**+++=+*#%%%%@@@@%#**+*%@+`
+     ;%@%@@@@@@@@@%#**+=+##%%%####**+~;:`~%@~
+      .~%%%%@%%###%###*****#%######*+~:``,*%*
+       `@*=#######%%%#*+=+#@@##%#*++=-:``,=##:'
+       .%*~*#%%##@%#%#+~::-+****+~;,`````,~**+#:
+        :*-+***####**+=-;,,:;---;:,'..'```-+~,+#
+       `~*--~-~~~~~=+~;;,''``-~-;;,'.''`,,-=+~-*
+       =%*~:;;;---=+-~=~---:,;=+=~-;:,`,,:~~=~-,
+       ,%#=::;~~==*==%%##%%#-,-+#*==~-;::;~=`,:
+        `++;-=++*##+#%@@@%#+=-~*##+===~--~==;,`
+          ==+**##%@@@%%%#***#**%%#=~==+~~~==;,'
+          ~#+*+*%@%@@%*=--;-~+#%@%=~+++~~==~.
+          `+#**+*%@%*+~-;--;:;-=*#==+*+=+++-
+           .#%%**%%*+*#####*=~===*=+*#*****:
+            `%@%%%*++#%@@%#=--=~+**#%%##**+.
+             '*@%%#=;-~=+=~;,;-=##%%%%%#%+:
+              .*@%%%**#*####***%%@%%%@%#=:,,
+                ~%@@@@@@@@@@@%%%%@@@%*~;:,,:`'..
+                 `%%%%%@@%%%%%%@@%*~:`,,,::,::```''..
+                .'~#%@@@@@@@%%+;;;;:,,`,,::`,,`'`,'```'.
+             '',:,-+#@%%%@@@@%%=`,:;;:,,:,,,`'''.,`.'``'''
 """
 
 # two tokens by design: the Actions GITHUB_TOKEN yields the contribution-style
@@ -134,7 +157,7 @@ def loc(repo_names, user_id):
 
 PALETTES = {
     "dark": {"bg": "#0d1117", "border": "#30363d", "art": "#8b949e", "h": "#58a6ff",
-             "k": "#ffa657", "v": "#c9d1d9", "d": "#484f58", "g": "#3fb950", "r": "#f85149"},
+            "k": "#ffa657", "v": "#c9d1d9", "d": "#484f58", "g": "#3fb950", "r": "#f85149"},
     "light": {"bg": "#ffffff", "border": "#d0d7de", "art": "#57606a", "h": "#0969da",
               "k": "#953800", "v": "#24292f", "d": "#afb8c1", "g": "#1a7f37", "r": "#cf222e"},
 }
@@ -160,35 +183,44 @@ def info_lines(s):
     return [
         [(f"{USER.lower()}@github ", "h"), ("─" * (W - len(USER) - 8), "d")],
         [],
-        kv("Role", "MS CS Grad Student, University of Florida"),
+        kv("Role", "MS CS Grad Student, Univ. of Florida"),
         kv("Focus", "Backend & Distributed Systems"),
         kv("Prior", "SWE, FoodHub Software Solutions"),
         kv("Editor", "Claude Code, VS Code"),
         [],
-        kv("Languages.Programming", "Go, Java, Python, TypeScript, C++"),
-        kv("Currently exploring", "distributed systems, agentic AI"),
+        kv("Languages", "Go, Java, Python, TS"),
+        kv("Exploring", "distributed systems, agentic AI"),
         [],
         rule("Contact"),
-        kv("Email", "vishalksetti0206@gmail.com"),
-        kv("LinkedIn", "https://www.linkedin.com/in/vishalsetti/"),
+        kv("Email", "vishalksetti0206@gmail.com"),          # EDIT ME
+        kv("LinkedIn", "https://www.linkedin.com/in/vishalsetti/"),       # EDIT ME
         [],
         rule("GitHub Stats"),
         kv2("Repos", f"{s['repos']} {{Contributed: {s['contributed']}}}", "Stars", n(s["stars"])),
         kv2("Commits", n(s["commits"]), "Followers", n(s["followers"])),
         [("Lines of Code: ", "k"), (n(s["loc"]), "v"), (" ( ", "d"),
-        (n(s["loc_add"]) + "++", "g"), (", ", "d"), (n(s["loc_del"]) + "--", "r"), (" )", "d")],
+         (n(s["loc_add"]) + "++", "g"), (", ", "d"), (n(s["loc_del"]) + "--", "r"), (" )", "d")],
     ]
+
+
+CARD_H = 500
+ART_FONT = 10
+ART_LINE_H = 13
 
 
 def render(mode, stats):
     p = PALETTES[mode]
     out = [
-        '<svg xmlns="http://www.w3.org/2000/svg" width="840" height="440" viewBox="0 0 840 440" '
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="840" height="{CARD_H}" viewBox="0 0 840 {CARD_H}" '
         f'font-family="Consolas, Menlo, monospace" font-size="13px">',
-        f'<rect x="0.5" y="0.5" width="839" height="439" rx="10" fill="{p["bg"]}" stroke="{p["border"]}"/>',
+        f'<rect x="0.5" y="0.5" width="839" height="{CARD_H - 1}" rx="10" fill="{p["bg"]}" stroke="{p["border"]}"/>',
     ]
     for i, line in enumerate(ART.strip("\n").split("\n")):
-        out.append(f'<text x="25" y="{40 + i * 20}" fill="{p["art"]}" xml:space="preserve">{html.escape(line)}</text>')
+        y = 35 + i * ART_LINE_H
+        out.append(
+            f'<text x="25" y="{y}" font-size="{ART_FONT}px" font-family="Consolas, Menlo, monospace" '
+            f'fill="{p["art"]}" xml:space="preserve">{html.escape(line)}</text>'
+        )
     for i, segs in enumerate(info_lines(stats)):
         if not segs:
             continue

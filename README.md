@@ -19,9 +19,8 @@
 ![Redis](https://img.shields.io/badge/Redis-DD0031?style=for-the-badge&logo=redis&logoColor=white)
 
 <!-- Optional: keep these two if you want them below the card — no code change needed,
-     they're hosted services and update themselves.
+     they're hosted services and update themselves. -->
 
 [![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=settivishal&theme=radical&no-frame=false&no-bg=true&margin-w=4)](https://github.com/settivishal)
 
 [![Dev Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)](https://github.com/settivishal)
--->
