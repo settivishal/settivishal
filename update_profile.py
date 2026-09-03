@@ -156,7 +156,7 @@ def loc(repo_names, user_id):
 
 
 PALETTES = {
-    "dark": {"bg": "#0d1117", "border": "#30363d", "art": "#8b949e", "h": "#58a6ff",
+    "dark": {"bg": "#0d1117", "border": "#30363d", "art": "#e6edf3", "h": "#58a6ff",
             "k": "#ffa657", "v": "#c9d1d9", "d": "#484f58", "g": "#3fb950", "r": "#f85149"},
     "light": {"bg": "#ffffff", "border": "#d0d7de", "art": "#57606a", "h": "#0969da",
               "k": "#953800", "v": "#24292f", "d": "#afb8c1", "g": "#1a7f37", "r": "#cf222e"},
@@ -192,8 +192,8 @@ def info_lines(s):
         kv("Exploring", "distributed systems, agentic AI"),
         [],
         rule("Contact"),
-        kv("Email", "vishalksetti0206@gmail.com"),          # EDIT ME
-        kv("LinkedIn", "https://www.linkedin.com/in/vishalsetti/"),       # EDIT ME
+        kv("Email", "vishalksetti0206@gmail.com"),
+        kv("LinkedIn", "https://www.linkedin.com/in/vishalsetti/"),
         [],
         rule("GitHub Stats"),
         kv2("Repos", f"{s['repos']} {{Contributed: {s['contributed']}}}", "Stars", n(s["stars"])),
