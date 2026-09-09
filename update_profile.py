@@ -230,8 +230,8 @@ def info_lines(s):
         kv("Exploring", "distributed systems, agentic AI"),
         [],
         rule("Contact"),
-        kv("Email", "your-email@example.com"),          # EDIT ME
-        kv("LinkedIn", "in/your-linkedin-handle"),       # EDIT ME
+        kv("Email", "vishalksetti0206@gmail.com"),          # EDIT ME
+        kv("LinkedIn", "https://www.linkedin.com/in/vishalsetti/"),       # EDIT ME
         [],
         rule("GitHub Stats"),
         kv2("Repos", f"{s['repos']} {{Contributed: {s['contributed']}}}", "Stars", n(s["stars"])),
